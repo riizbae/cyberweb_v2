@@ -1,37 +1,41 @@
 #sectionProduits{
     height:100vh;
     width:100%;
+    padding:0;
 
-    article{
+    .fondGradient{
         background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
         transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1),opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
-        height:58vh;
+        width:100%;
+        color:#fff;
+        border:0px !important;
 
-        &::after{
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 50px 0 50px 200px;
-            border-color: transparent transparent transparent #007bff;
-
+        h3{
+            text-align:center;
+            padding-top:15px;
+            font-size:2em;
+            margin-top:20px;
+            margin-bottom:30px;
+            text-shadow:2px 2px #444;
+            text-transform:uppercase;
         }
-
-        &:nth-child(2n){
-            background: -webkit-gradient(linear, left top, left bottom, from(#FFF, to(#FFF)));
-            background:#fff;
-        }
-
-        .produit{
-            color:#fff;
-            background:red;
-            padding:20px 20px;
-        }
-
-        .img{
-            margin-left:50px;
-        }
-
-
     }
+
+
+        .fondTransparent{
+            background-color:#fff;
+            width:100%;
+            color:#444;
+
+            h3{
+                text-shadow:2px 2px #fff;
+            }
+        }
+
+    ul{
+        width:70%;
+        margin:auto;
+        }
 }
+
     
