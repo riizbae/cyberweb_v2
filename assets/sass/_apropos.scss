@@ -1,0 +1,45 @@
+#sectionPropos{
+    height:100vh;
+    overflow:hidden;
+    width:100%;
+    margin-left:auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+    transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1),opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
+
+    .propos{
+
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:1rem;
+        margin-bottom:1rem;
+        color:#fff;
+
+        h2{
+            font-size:3em;
+            margin-top:50px;
+            margin-bottom:75px;
+            text-shadow:2px 2px #444;
+        }
+
+
+        p{
+            text-align:justify;
+        }
+
+
+        .imgPropos{
+            background:red;
+            margin-top:150px;
+            margin-left:50px;
+            padding:5px 5px;
+            background:#fff;
+            border:1px solid #444;
+
+            img{
+                border:1px solid #444;
+            }
+        }
+
+    }
+}

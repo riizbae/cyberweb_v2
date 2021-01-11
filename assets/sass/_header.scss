@@ -1,0 +1,30 @@
+#header{
+    background-image: url('../img/header.jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      background-position:center center;
+      display:grid;
+      place-items:center;
+      height:100vh;
+
+
+     h1{
+
+        font-size:10vw;
+        text-transform:uppercase;
+        mix-blend-mode:screen;
+        background:#fff;
+        color:#000;
+        /*    
+        mix-blend-mode:multiply;
+        background:#000;
+        color:#fff;
+        */
+        padding:10px;
+        line-height:1;
+        text-align:center;
+        border:20px double #000;
+        /*   text-shadow:2px 2px 0px #fff, 6px 6px 0px #000; */
+    }
+}

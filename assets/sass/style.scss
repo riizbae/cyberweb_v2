@@ -1,0 +1,27 @@
+// normalize
+
+// fond de page
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+// header
+@import "_header.scss";
+
+// navigation
+@import "_nav.scss";
+
+// corps de page
+
+// a propos
+@import "_apropos.scss";
+
+// services
+@import "_sectionServices.scss";
+
+// produits
+@import "_sectionproduits.scss";
+
+//footer
+@import "_footer.scss";
