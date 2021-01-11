@@ -137,6 +137,16 @@ body {
   text-transform: uppercase;
 }
 
+#sectionProduits .fondGradient .imgDeux img {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+@media (max-width: 640px) {
+  #sectionProduits .fondGradient .imgDeux img {
+    clip-path: polygon(0% 0%, 100% 0, 100% 69%, 48% 100%, 0 68%);
+  }
+}
+
 #sectionProduits .fondTransparent {
   background-color: #fff;
   width: 100%;
@@ -145,6 +155,16 @@ body {
 
 #sectionProduits .fondTransparent h3 {
   text-shadow: 2px 2px #fff;
+}
+
+#sectionProduits .fondTransparent .imgUn img {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+@media (max-width: 640px) {
+  #sectionProduits .fondTransparent .imgUn img {
+    clip-path: polygon(48% 0, 100% 33%, 100% 100%, 0 99%, 0 36%);
+  }
 }
 
 #sectionProduits ul {
