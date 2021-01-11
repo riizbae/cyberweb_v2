@@ -114,7 +114,6 @@ body {
 }
 
 #sectionProduits {
-  height: 100vh;
   width: 100%;
   padding: 0;
 }
@@ -173,8 +172,23 @@ body {
   }
 }
 
-#sectionProduits ul {
+#sectionProduits .card-body {
+  margin-top: 110px;
+}
+
+#sectionProduits .card-body ul {
   width: 70%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+footer {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+  clip-path: polygon(0% 0%, 100% 0, 86% 0, 64% 100%, 0 100%);
 }
 /*# sourceMappingURL=style.css.map */
