@@ -265,4 +265,63 @@ footer .formulaire input[type="button"] {
   text-transform: uppercase;
   border: none;
 }
+
+@media (max-width: 640px) {
+  footer {
+    height: auto;
+  }
+  footer header {
+    width: 100%;
+    margin-left: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
+    color: #fff;
+  }
+  footer header h2 {
+    padding: 30px;
+    font-size: 3em;
+    text-shadow: 2px 2px #444;
+  }
+  footer .row {
+    position: static !important;
+    width: 100%;
+  }
+  footer .row .adresse {
+    background: -webkit-gradient(linear, right bottom, right top, from(#fff), to(#fff));
+    padding: 10px 10px;
+    width: 100%;
+    position: initial;
+  }
+  footer .row .adresse .fondAdresse {
+    width: 90%;
+    margin: auto;
+  }
+  footer .row .adresse .fondAdresse p i {
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  footer .formulaire {
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
+    color: #fff;
+    width: 100%;
+    position: initial;
+    padding: 10px 10px;
+  }
+  footer .formulaire input[type="button"] {
+    background-color: #fff;
+    color: #444;
+  }
+  footer .formulaire input select {
+    width: 95%;
+    margin-left: 5px;
+  }
+  footer .formulaire input textarea {
+    width: 95%;
+    margin-left: 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
