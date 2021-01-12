@@ -1,97 +1,163 @@
-#sectionProduits{
-    width:100%;
-    padding:0;
 
-    .card{
-        border:none !important;
-    }
+@media (max-width: 640px) {
+    #sectionProduits{
+        width:110%;
+        padding:0;
 
-
-    .fondGradient{
-        background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
-        transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1),opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
-        width:100%;
-        color:#fff;
-        border:0px !important;
-
-        h3{
-            text-align:center;
-            padding-top:15px;
-            font-size:2em;
-            margin-top:20px;
-            margin-bottom:30px;
-            text-shadow:2px 2px #444;
-            text-transform:uppercase;
+        .card{
+            border:none;
+            border-radius:0%;
         }
 
-        .imgDeux{
-            position:relative;
-            img{
-                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-            }
-
-            .croix{
-                position:absolute;
-                background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
-                transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1),opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
-                width:100%;
-                color:#fff;
-                border:0px !important;
-                height:100px;
-                clip-path: polygon(0 41%, 40% 38%, 40% 0, 57% 0, 57% 37%, 100% 39%, 100% 57%, 56% 57%, 56% 100%, 41% 100%, 41% 56%, 0 56%);
-            }
-
-              @media (max-width: 640px) {
-                    img{
-                        clip-path: polygon(0% 0%, 100% 0, 100% 69%, 48% 100%, 0 68%);
-                    }
-                }
-        }
-    }
-
-
-        .fondTransparent{
-            background-color:#fff;
+        .fondGradient{
+            background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+            transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1),opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
             width:100%;
-            color:#444;
+            color:#fff;
+            border:0px !important;
 
             h3{
-            text-align:center;
-            padding-top:15px;
-            font-size:2em;
-            margin-top:20px;
-            margin-bottom:30px;
-            text-shadow:2px 2px #fff;
-            text-transform:uppercase;
+                text-align:center;
+                padding-top:5px;
+                font-size:2em;
+                margin-top:0px;
+                text-shadow:2px 2px #444;
+                text-transform:uppercase;
             }
 
-            .imgUn{
+            .imgDeux{
+                position:relative;
                 img{
-                    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);                
+                    clip-path: polygon(0% 0%, 100% 0, 100% 69%, 48% 100%, 0 68%);
+                    border-radius:0;
+                }
+
+            }
+        }
+
+
+            .fondTransparent{
+                background-color:#fff;
+                width:100%;
+                color:#444;
+
+                h3{
+                text-align:center;
+                padding-top:15px;
+                font-size:2em;
+                margin-top:20px;
+                margin-bottom:30px;
+                text-shadow:2px 2px #fff;
+                text-transform:uppercase;
+                }
+
+                .imgUn{
+                    img{
+                        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);                
+                    }
+
+                    @media (max-width: 640px) {
+                        img{
+                        clip-path: polygon(48% 0, 100% 33%, 100% 100%, 0 99%, 0 36%);
+                        }
+                    }
+
+            }
+        }
+
+        .card-body{
+
+            ul{
+                width:70%;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:0px;
+                }
+
+        }  
+    }
+
+}
+
+
+@media (min-width: 641px) {
+    #sectionProduits{
+        width:100%;
+        padding:0;
+
+        .card{
+            border:none !important;
+        }
+
+
+        .fondGradient{
+            background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+            transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1),opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
+            width:100%;
+            color:#fff;
+            border:0px !important;
+
+            h3{
+                text-align:center;
+                padding-top:15px;
+                font-size:2em;
+                margin-top:20px;
+                margin-bottom:30px;
+                text-shadow:2px 2px #444;
+                text-transform:uppercase;
+            }
+
+            .imgDeux{
+                position:relative;
+                img{
+                    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
                 }
 
                 @media (max-width: 640px) {
-                    img{
-                    clip-path: polygon(48% 0, 100% 33%, 100% 100%, 0 99%, 0 36%);
+                        img{
+                            clip-path: polygon(0% 0%, 100% 0, 100% 69%, 48% 100%, 0 68%);
+                        }
                     }
+            }
+        }
+
+
+            .fondTransparent{
+                background-color:#fff;
+                width:100%;
+                color:#444;
+
+                h3{
+                text-align:center;
+                padding-top:15px;
+                font-size:2em;
+                margin-top:20px;
+                margin-bottom:30px;
+                text-shadow:2px 2px #fff;
+                text-transform:uppercase;
                 }
 
+                .imgUn{
+                    img{
+                        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);                
+                    }
+
+                    @media (max-width: 640px) {
+                        img{
+                        clip-path: polygon(48% 0, 100% 33%, 100% 100%, 0 99%, 0 36%);
+                        }
+                    }
+
+            }
+        }
+        .card-body{
+            ul{
+                width:70%;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:50px;
+                }
         }
     }
-
-    .card-body{
-        margin-top:110px;
-
-        ul{
-            width:70%;
-            margin-left:auto;
-            margin-right:auto;
-            margin-top:50px;
-            }
-
-    }
-
-    
-
 }
 

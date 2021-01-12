@@ -1,101 +1,8 @@
-footer {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-  
-    header {
-      width: 100%;
-      margin-left: auto;
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(#000),
-        to(#045fb4)
-      );
-      // clip-path: polygon(0% 0%, 100% 0, 86% 0, 64% 100%, 0 100%);
-      color: #fff;
-  
-      h2 {
-        padding: 30px;
-        font-size: 3em;
-        text-shadow: 2px 2px #444;
-      }
-    }
-  
-    .row {
-      position: relative;
-  
-      .adresse {
-        background: -webkit-gradient(
-          linear,
-          right bottom,
-          right top,
-          from(#000),
-          to(#045fb4)
-        );
-        padding: 10px 10px;
-        width: 25%;
-        height: 200px;
-        position: absolute;
-        top: -50px;
-        left: 10%;
-  
-        .fondAdresse {
-          margin: auto;
-          background-color: #fff;
-          height: 180px;
-  
-          p {
-            i {
-              background: -webkit-gradient(
-                linear,
-                left top,
-                left bottom,
-                from(#000),
-                to(#045fb4)
-              );
-              color: transparent;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              font-weight: 700;
-              padding-left: 5px;
-              padding-right: 5px;
-            }
-          }
-        }
-      }
-    }
-  
-    .formulaire {
-      position: absolute;
-      width: 50%;
-      left: 40%;
-      padding: 5px 5px;
-  
-      input {
-        &[type="button"] {
-          margin-left: auto;
-          margin-right: auto;
-          background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(#000),
-            to(#045fb4)
-          );
-          // clip-path: polygon(0% 0%, 100% 0, 86% 0, 64% 100%, 0 100%);
-          color: #fff;
-          text-transform: uppercase;
-          border: none;
-        }
-      }
-    }
-  }
-  
-  @media (max-width: 640px) {
+@media (max-width: 640px) {
     footer {
       height: auto;
+      width:110%;
+      margin-top:-3px;
   
       header {
         width: 100%;
@@ -117,41 +24,28 @@ footer {
         }
       }
   
-      .row {
-        position: static !important;
-        width: 100%;
+      .fondContact {
+        padding:0;
+        width:100%;
   
         .adresse {
-          background: -webkit-gradient(
-            linear,
-            right bottom,
-            right top,
-            from(#fff),
-            to(#fff)
-          );
+          background: #fff;
           padding: 10px 10px;
           width: 100%;
-          position: initial;
   
           .fondAdresse {
-            width: 90%;
+            width: 80%;
             margin: auto;
+            padding:5px 5px;
   
             p {
               i {
-                background: -webkit-gradient(
-                  linear,
-                  left top,
-                  left bottom,
-                  from(#000),
-                  to(#045fb4)
-                );
+                padding-left:5px;padding-right:5px;;
+                background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
                 color: transparent;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-weight: 700;
-                padding-left: 5px;
-                padding-right: 5px;
               }
             }
           }
@@ -165,29 +59,118 @@ footer {
           from(#000),
           to(#045fb4)
         );
-        // clip-path: polygon(0% 0%, 100% 0, 86% 0, 64% 100%, 0 100%);
         color: #fff;
         width: 100%;
         position: initial;
         padding: 10px 10px;
-  
-        input {
-          &[type="button"] {
-              background-color:#fff;
-              color:#444;
-          }
-  
-          select {
-            width: 95%;
-            margin-left: 5px;
-          }
-  
-          textarea {
-            width: 95%;
-            margin-left: 5px;
-          }
+
+        form{
+            width:80%;
+            margin:auto;
+
+            input {
+                &[type="button"] {
+                    background-color:#fff;
+                    color:#444;
+                    border:0;
+                    margin:auto;
+                    text-transform:uppercase;
+                    font-weight:900;
+                }
+            }
         }
       }
     }
   }
+
+  @media screen and (min-width : 768px){
+    footer {
+        height:100vh;
+      
+        header {
+          width: 100%;
+          margin-left: auto;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#000),
+            to(#045fb4)
+          );
+          // clip-path: polygon(0% 0%, 100% 0, 86% 0, 64% 100%, 0 100%);
+          color: #fff;
+      
+          h2 {
+            padding: 30px;
+            font-size: 3em;
+            text-shadow: 2px 2px #444;
+          }
+        }
+      
+        .fondContact {
+          position: relative;
+      
+          .adresse {
+            background: -webkit-gradient(
+              linear,
+              right bottom,
+              right top,
+              from(#000),
+              to(#045fb4)
+            );
+            padding: 10px 10px;
+            width: 25%;
+            height: 200px;
+            position: absolute;
+            top: -50px;
+            left: 10%;
+      
+            .fondAdresse {
+              margin: auto;
+              background-color: #fff;
+              height: 180px;
+      
+              p {
+                i {
+                    padding-left:5px;padding-right:5px;;
+                    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      
+        .formulaire {
+          position: absolute;
+          width: 50%;
+          left: 40%;
+          padding: 5px 5px;
+      
+          input {
+            &[type="button"] {
+              margin-left: auto;
+              margin-right: auto;
+              background: -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                from(#000),
+                to(#045fb4)
+              );
+              // clip-path: polygon(0% 0%, 100% 0, 86% 0, 64% 100%, 0 100%);
+              color: #fff;
+              text-transform: uppercase;
+              border: none;
+            }
+          }
+        }
+      }
+  }
+
+  
+
   

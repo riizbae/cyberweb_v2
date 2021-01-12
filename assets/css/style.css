@@ -1,6 +1,19 @@
+html {
+  width: 100%;
+}
+
 body {
   width: 100%;
   overflow-x: hidden;
+  padding: 0;
+}
+
+@media (max-width: 640px) {
+  body {
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+  }
 }
 
 #header {
@@ -32,243 +45,282 @@ body {
   /*   text-shadow:2px 2px 0px #fff, 6px 6px 0px #000; */
 }
 
-#sectionPropos {
-  height: 100vh;
-  overflow: hidden;
-  width: 100%;
-  margin-left: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
-  transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1), opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
-}
-
-#sectionPropos .propos {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-#sectionPropos .propos h2 {
-  font-size: 3em;
-  margin-top: 50px;
-  margin-bottom: 75px;
-  text-shadow: 2px 2px #444;
-}
-
-#sectionPropos .propos p {
-  text-align: justify;
-}
-
-#sectionPropos .propos .imgPropos {
-  background: red;
-  margin-top: 150px;
-  margin-left: 50px;
-  padding: 5px 5px;
-  background: #fff;
-  border: 1px solid #444;
-}
-
-#sectionPropos .propos .imgPropos img {
-  border: 1px solid #444;
-}
-
-#sectionService {
-  padding: 10p 10px;
-  color: #444;
-}
-
-#sectionService h2 {
-  text-align: center;
-  padding-top: 15px;
-  font-size: 3.5em;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px #FFF;
-}
-
-#sectionService i {
-  font-size: 3.5em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-}
-
-#sectionService h3 {
-  font-weight: 300;
-  font-size: 2em;
-  margin-top: 5px;
-}
-
-#sectionService h3::first-letter {
-  text-transform: uppercase;
-}
-
-#sectionService p {
-  text-align: justify;
-  font-size: 1em;
-}
-
-#sectionProduits {
-  width: 100%;
-  padding: 0;
-}
-
-#sectionProduits .card {
-  border: none !important;
-}
-
-#sectionProduits .fondGradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
-  transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1), opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
-  width: 100%;
-  color: #fff;
-  border: 0px !important;
-}
-
-#sectionProduits .fondGradient h3 {
-  text-align: center;
-  padding-top: 15px;
-  font-size: 2em;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px #444;
-  text-transform: uppercase;
-}
-
-#sectionProduits .fondGradient .imgDeux {
-  position: relative;
-}
-
-#sectionProduits .fondGradient .imgDeux img {
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
-
-#sectionProduits .fondGradient .imgDeux .croix {
-  position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
-  transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1), opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
-  width: 100%;
-  color: #fff;
-  border: 0px !important;
-  height: 100px;
-  clip-path: polygon(0 41%, 40% 38%, 40% 0, 57% 0, 57% 37%, 100% 39%, 100% 57%, 56% 57%, 56% 100%, 41% 100%, 41% 56%, 0 56%);
-}
-
 @media (max-width: 640px) {
-  #sectionProduits .fondGradient .imgDeux img {
-    clip-path: polygon(0% 0%, 100% 0, 100% 69%, 48% 100%, 0 68%);
+  #sectionPropos {
+    width: 110%;
+    margin-left: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+    transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1), opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
+  }
+  #sectionPropos .propos {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    padding-bottom: 15px;
+  }
+  #sectionPropos .propos h2 {
+    font-size: 3em;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px #444;
+  }
+  #sectionPropos .propos p {
+    text-align: justify;
+  }
+  #sectionPropos .propos .imgPropos {
+    display: none;
   }
 }
 
-#sectionProduits .fondTransparent {
-  background-color: #fff;
-  width: 100%;
-  color: #444;
-}
-
-#sectionProduits .fondTransparent h3 {
-  text-align: center;
-  padding-top: 15px;
-  font-size: 2em;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px #fff;
-  text-transform: uppercase;
-}
-
-#sectionProduits .fondTransparent .imgUn img {
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+@media (min-width: 641px) {
+  #sectionPropos {
+    width: 100%;
+    margin-left: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+    transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1), opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
+  }
+  #sectionPropos .propos {
+    width: 100%;
+    color: #fff;
+  }
+  #sectionPropos .propos h2 {
+    font-size: 3em;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px #444;
+  }
+  #sectionPropos .propos p {
+    text-align: justify;
+  }
+  #sectionPropos .propos .imgPropos {
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 5px 5px;
+    background: #fff;
+    border: 1px solid #444;
+  }
+  #sectionPropos .propos .imgPropos img {
+    border: 1px solid #444;
+  }
 }
 
 @media (max-width: 640px) {
+  #sectionService {
+    padding: 10p 10px;
+    color: #444;
+    width: 110%;
+  }
+  #sectionService h2 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 3.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #FFF;
+  }
+  #sectionService i {
+    font-size: 3.5em;
+    font-size: 3.5em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+  #sectionService h3 {
+    font-weight: 300;
+    font-size: 2em;
+    margin-top: 5px;
+  }
+  #sectionService h3::first-letter {
+    text-transform: uppercase;
+  }
+  #sectionService p {
+    text-align: justify;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 641px) {
+  #sectionService {
+    padding: 10p 10px;
+    color: #444;
+  }
+  #sectionService h2 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 3.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #FFF;
+  }
+  #sectionService i {
+    font-size: 3.5em;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+  #sectionService h3 {
+    font-weight: 300;
+    font-size: 2em;
+    margin-top: 5px;
+  }
+  #sectionService h3::first-letter {
+    text-transform: uppercase;
+  }
+  #sectionService p {
+    text-align: justify;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 640px) {
+  #sectionProduits {
+    width: 110%;
+    padding: 0;
+  }
+  #sectionProduits .card {
+    border: none;
+    border-radius: 0%;
+  }
+  #sectionProduits .fondGradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+    transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1), opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
+    width: 100%;
+    color: #fff;
+    border: 0px !important;
+  }
+  #sectionProduits .fondGradient h3 {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 2em;
+    margin-top: 0px;
+    text-shadow: 2px 2px #444;
+    text-transform: uppercase;
+  }
+  #sectionProduits .fondGradient .imgDeux {
+    position: relative;
+  }
+  #sectionProduits .fondGradient .imgDeux img {
+    clip-path: polygon(0% 0%, 100% 0, 100% 69%, 48% 100%, 0 68%);
+    border-radius: 0;
+  }
+  #sectionProduits .fondTransparent {
+    background-color: #fff;
+    width: 100%;
+    color: #444;
+  }
+  #sectionProduits .fondTransparent h3 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #fff;
+    text-transform: uppercase;
+  }
+  #sectionProduits .fondTransparent .imgUn img {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  }
+}
+
+@media (max-width: 640px) and (max-width: 640px) {
   #sectionProduits .fondTransparent .imgUn img {
     clip-path: polygon(48% 0, 100% 33%, 100% 100%, 0 99%, 0 36%);
   }
 }
 
-#sectionProduits .card-body {
-  margin-top: 110px;
+@media (max-width: 640px) {
+  #sectionProduits .card-body ul {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
 }
 
-#sectionProduits .card-body ul {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+@media (min-width: 641px) {
+  #sectionProduits {
+    width: 100%;
+    padding: 0;
+  }
+  #sectionProduits .card {
+    border: none !important;
+  }
+  #sectionProduits .fondGradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+    transition: background-color 0.45s cubic-bezier(0.25, 1, 0.33, 1), opacity 0.45s cubic-bezier(0.25, 1, 0.33, 1);
+    width: 100%;
+    color: #fff;
+    border: 0px !important;
+  }
+  #sectionProduits .fondGradient h3 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #444;
+    text-transform: uppercase;
+  }
+  #sectionProduits .fondGradient .imgDeux {
+    position: relative;
+  }
+  #sectionProduits .fondGradient .imgDeux img {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
 }
 
-footer {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
+@media (min-width: 641px) and (max-width: 640px) {
+  #sectionProduits .fondGradient .imgDeux img {
+    clip-path: polygon(0% 0%, 100% 0, 100% 69%, 48% 100%, 0 68%);
+  }
 }
 
-footer header {
-  width: 100%;
-  margin-left: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
-  color: #fff;
+@media (min-width: 641px) {
+  #sectionProduits .fondTransparent {
+    background-color: #fff;
+    width: 100%;
+    color: #444;
+  }
+  #sectionProduits .fondTransparent h3 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #fff;
+    text-transform: uppercase;
+  }
+  #sectionProduits .fondTransparent .imgUn img {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  }
 }
 
-footer header h2 {
-  padding: 30px;
-  font-size: 3em;
-  text-shadow: 2px 2px #444;
+@media (min-width: 641px) and (max-width: 640px) {
+  #sectionProduits .fondTransparent .imgUn img {
+    clip-path: polygon(48% 0, 100% 33%, 100% 100%, 0 99%, 0 36%);
+  }
 }
 
-footer .row {
-  position: relative;
-}
-
-footer .row .adresse {
-  background: -webkit-gradient(linear, right bottom, right top, from(#000), to(#045fb4));
-  padding: 10px 10px;
-  width: 25%;
-  height: 200px;
-  position: absolute;
-  top: -50px;
-  left: 10%;
-}
-
-footer .row .adresse .fondAdresse {
-  margin: auto;
-  background-color: #fff;
-  height: 180px;
-}
-
-footer .row .adresse .fondAdresse p i {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-footer .formulaire {
-  position: absolute;
-  width: 50%;
-  left: 40%;
-  padding: 5px 5px;
-}
-
-footer .formulaire input[type="button"] {
-  margin-left: auto;
-  margin-right: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
-  color: #fff;
-  text-transform: uppercase;
-  border: none;
+@media (min-width: 641px) {
+  #sectionProduits .card-body ul {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 640px) {
   footer {
     height: auto;
+    width: 110%;
+    margin-top: -3px;
   }
   footer header {
     width: 100%;
@@ -281,28 +333,28 @@ footer .formulaire input[type="button"] {
     font-size: 3em;
     text-shadow: 2px 2px #444;
   }
-  footer .row {
-    position: static !important;
+  footer .fondContact {
+    padding: 0;
     width: 100%;
   }
-  footer .row .adresse {
-    background: -webkit-gradient(linear, right bottom, right top, from(#fff), to(#fff));
+  footer .fondContact .adresse {
+    background: #fff;
     padding: 10px 10px;
     width: 100%;
-    position: initial;
   }
-  footer .row .adresse .fondAdresse {
-    width: 90%;
+  footer .fondContact .adresse .fondAdresse {
+    width: 80%;
     margin: auto;
+    padding: 5px 5px;
   }
-  footer .row .adresse .fondAdresse p i {
-    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
+  footer .fondContact .adresse .fondAdresse p i {
+    padding-left: 5px;
+    padding-right: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
-    padding-left: 5px;
-    padding-right: 5px;
   }
   footer .formulaire {
     background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
@@ -311,17 +363,74 @@ footer .formulaire input[type="button"] {
     position: initial;
     padding: 10px 10px;
   }
-  footer .formulaire input[type="button"] {
+  footer .formulaire form {
+    width: 80%;
+    margin: auto;
+  }
+  footer .formulaire form input[type="button"] {
     background-color: #fff;
     color: #444;
+    border: 0;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 900;
   }
-  footer .formulaire input select {
-    width: 95%;
-    margin-left: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    height: 100vh;
   }
-  footer .formulaire input textarea {
-    width: 95%;
-    margin-left: 5px;
+  footer header {
+    width: 100%;
+    margin-left: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
+    color: #fff;
+  }
+  footer header h2 {
+    padding: 30px;
+    font-size: 3em;
+    text-shadow: 2px 2px #444;
+  }
+  footer .fondContact {
+    position: relative;
+  }
+  footer .fondContact .adresse {
+    background: -webkit-gradient(linear, right bottom, right top, from(#000), to(#045fb4));
+    padding: 10px 10px;
+    width: 25%;
+    height: 200px;
+    position: absolute;
+    top: -50px;
+    left: 10%;
+  }
+  footer .fondContact .adresse .fondAdresse {
+    margin: auto;
+    background-color: #fff;
+    height: 180px;
+  }
+  footer .fondContact .adresse .fondAdresse p i {
+    padding-left: 5px;
+    padding-right: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+  footer .formulaire {
+    position: absolute;
+    width: 50%;
+    left: 40%;
+    padding: 5px 5px;
+  }
+  footer .formulaire input[type="button"] {
+    margin-left: auto;
+    margin-right: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045fb4));
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

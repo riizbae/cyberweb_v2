@@ -1,9 +1,22 @@
 // normalize
 
 // fond de page
+
+html{
+    width:100%;
+}
 body{
     width:100%;
-    overflow-x:hidden;
+    overflow-x :hidden;
+    padding:0;
+}
+
+@media (max-width: 640px) {
+    body{
+        width:100%;
+        padding:0;
+        overflow-x : hidden;
+    }
 }
 
 // header
